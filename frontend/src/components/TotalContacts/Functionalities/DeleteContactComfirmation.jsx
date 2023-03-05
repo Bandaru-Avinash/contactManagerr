@@ -14,7 +14,7 @@ const DeleteContactComfirmation = (props) => {
     console.log(props);
     const userid = JSON.parse(localStorage.getItem("userdetails"))._id;
     await axios.delete(
-      `http://localhost:5050/deletecontact/${userid}`,
+      `https://contacts-backend-wo14.onrender.com/deletecontact/${userid}`,
       {
         data: { ids: props.arr },
         headers: {
